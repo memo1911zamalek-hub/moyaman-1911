@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="متجر HB GROUP للمنتجات الغذائية والمشروبات والحلويات">
+<title>HB GROUP | المتجر الإلكتروني</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="announcement">HB GROUP — اختيارات مميزة من علامات عالمية <span>كتالوج تجريبي • الأسعار بالدولار</span></div>
+<header class="header">
+  <a class="brand-logo" href="#home" aria-label="HB GROUP الصفحة الرئيسية"><span class="monogram">HB</span><span class="brand-words">HB <b>GROUP</b><small>PREMIUM GOODS & MORE</small></span></a>
+  <nav class="main-nav"><a href="#home">الرئيسية</a><a href="#shop">المتجر</a><a href="#brands">العلامات التجارية</a><a href="#footer">تواصل ومعلومات</a></nav>
+  <button class="cart-trigger" id="openCart" aria-label="فتح سلة المشتريات"><span class="cart-symbol">🛒</span><span>السلة</span><b id="cartCount">0</b></button>
+</header>
+<main>
+<section class="hero" id="home"><div class="hero-content"><span class="eyebrow">WELCOME TO HB GROUP</span><h1>اختياراتك المفضلة،<br><em>في مكان واحد.</em></h1><p>تسوّق مجموعة مختارة من المشروبات والعصائر والشوكولاتة والحلويات من علامات عالمية.</p><div class="hero-actions"><a class="btn btn-gold" href="#shop">ابدأ التسوق <span>←</span></a><span class="secure-note">تجربة متجر إلكتروني تجريبية</span></div><div class="hero-stats"><div><b>5</b><small>علامات تجارية</small></div><i></i><div><b>منتجات متنوعة</b><small>أصناف وأحجام مختلفة</small></div></div></div><div class="hero-visual"><div class="halo"></div><div class="gold-disc">HB<br><small>GROUP</small></div><div class="float-tag tag-a">QUALITY SELECTION</div><div class="float-tag tag-b">RED BULL • NUTELLA</div></div></section>
+<section class="brands-section" id="brands"><div class="section-intro"><span class="eyebrow dark">OUR BRANDS</span><h2>تسوّق حسب العلامة</h2></div><div class="brand-chips" id="brandChips"></div></section>
+<section class="shop-section" id="shop"><div class="shop-heading"><div><span class="eyebrow dark">THE COLLECTION</span><h2>كل المنتجات</h2><p>اختار المنتج المناسب وأضفه إلى سلة مشترياتك.</p></div><div class="product-count" id="productCount">0 منتج</div></div>
+<div class="filters"><label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="ابحث باسم المنتج أو العلامة..."></label><select id="brandFilter"><option value="all">كل العلامات التجارية</option></select><select id="categoryFilter"><option value="all">كل الأقسام</option><option>مشروبات الطاقة</option><option>العصائر</option><option>الشوكولاتة القابلة للدهن</option><option>البسكويت</option><option>الشوكولاتة والحلويات</option></select><select id="sortFilter"><option value="featured">ترتيب مقترح</option><option value="low">السعر: الأقل أولاً</option><option value="high">السعر: الأعلى أولاً</option><option value="name">الاسم: أ–ي</option></select></div>
+<div class="product-grid" id="products"></div>
+</section>
+<section class="service-strip"><div><span>✦</span><b>اختيارات متنوعة</b><small>منتجات من علامات معروفة</small></div><div><span>◇</span><b>تجربة تسوق سهلة</b><small>بحث وفلاتر وسلة مشتريات</small></div><div><span>◎</span><b>تصميم متجاوب</b><small>يعمل على الهاتف والكمبيوتر</small></div></section>
+<section class="disclaimer"><b>تنويه قبل الطلب</b><p>هذا إصدار تجريبي للمتجر. الأسعار المعروضة تقديرية بالدولار وليست أسعار بيع مؤكدة أو أسعاراً مباشرة من الشركات. توافر المنتجات وتكلفة الشحن والضرائب تحتاج إلى تأكيد من إدارة المتجر. صور العبوات المعروضة مأخوذة من صفحات منتجات لمتاجر ومواقع علامات تجارية؛ قد تختلف العبوة حسب السوق والإصدار. لا توجد هنا بوابة دفع أو نظام مخزون أو إرسال طلبات إلى خادم.</p></section>
+</main>
+<footer id="footer"><a class="brand-logo footer-logo" href="#home"><span class="monogram">HB</span><span class="brand-words">HB <b>GROUP</b><small>PREMIUM GOODS & MORE</small></span></a><p>كتالوج متجر تجريبي مستقل — جميع العلامات التجارية مملوكة لأصحابها.</p><span>© <span id="year"></span> HB GROUP</span></footer>
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات" aria-hidden="true"><div class="drawer-head"><div><span class="eyebrow dark">YOUR BAG</span><h2>سلة المشتريات</h2></div><button class="close-btn" id="closeCart" aria-label="إغلاق">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-bottom"><div class="subtotal"><span>الإجمالي التقديري</span><b id="subtotal">$0.00</b></div><small>لا يشمل الشحن أو الضرائب.</small><button class="btn btn-dark full" id="checkoutBtn">متابعة إتمام الطلب</button></div></aside>
+<div class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><div class="modal-head"><div><span class="eyebrow dark">CHECKOUT REQUEST</span><h2 id="checkoutTitle">بيانات طلبك</h2></div><button class="close-btn" id="closeCheckout">×</button></div><form id="checkoutForm"><label>الاسم بالكامل<input name="name" required placeholder="اكتب اسمك"></label><label>رقم الهاتف<input name="phone" required inputmode="tel" placeholder="رقم للتواصل"></label><label>المدينة<input name="city" required placeholder="مثلاً: طرابلس"></label><label>العنوان أو ملاحظات التوصيل<textarea name="address" rows="2" placeholder="المنطقة والشارع وأي تفاصيل إضافية"></textarea></label><div class="checkout-total"><span>قيمة المنتجات</span><b id="checkoutTotal">$0.00</b></div><p class="form-hint">بالضغط على إنشاء ملخص الطلب، ستظهر لك تفاصيل طلبك لتنسخها وترسلها إلى إدارة المتجر. لن يتم خصم أي مبلغ.</p><button class="btn btn-dark full" type="submit">إنشاء ملخص الطلب</button></form><div class="order-result" id="orderResult" hidden><div class="success-mark">✓</div><h3>تم تجهيز ملخص طلبك</h3><p>انسخ التفاصيل وشاركها مع إدارة المتجر لتأكيد السعر والتوافر والتوصيل.</p><textarea id="orderText" rows="9" readonly></textarea><button class="btn btn-gold full" id="copyOrder">نسخ ملخص الطلب</button></div></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body></html>
